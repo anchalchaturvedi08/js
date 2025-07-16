@@ -1,0 +1,77 @@
+## 🧠 What is **Hoisting**?
+
+**Hoisting** means:
+
+> JavaScript moves **declarations** (not values) to the **top of the code** before executing it.
+
+---
+
+### 🟤 Think of it like a box:
+
+Imagine your code is like a **box of instructions**.
+Before JavaScript starts running the code line-by-line, it first **goes through the entire box** and picks out all the **variable and function declarations**, and moves them to the **top** of the box — **this is hoisting**.
+
+But here's the catch:
+
+* `var` gets **declared and initialized as `undefined`**
+* `let` and `const` are hoisted too, but they stay in a **"temporal dead zone" (TDZ)** — you **can’t use them** before the actual line appears.
+
+---
+
+### 📦 Box Example:
+
+```javascript
+console.log(name); // ❓ What will this print?
+var name = "Anchal";
+```
+
+### 🧠 What JS actually does (behind the scenes):
+
+```javascript
+var name; // hoisted to the top
+console.log(name); // --> undefined
+name = "Anchal";
+```
+
+✅ That’s why it **prints `undefined`**, not an error.
+
+---
+
+### 🔴 But with `let` or `const`:
+
+```javascript
+console.log(age); // ❌ Error: Cannot access 'age' before initialization
+let age = 21;
+```
+
+Here’s how JS sees it:
+
+```javascript
+// let age; (hoisted but in "dead zone")
+console.log(age); // ❌ ERROR
+age = 21;
+```
+
+Because `let`/`const` are hoisted but **not initialized**, you get a **ReferenceError** if you try to use them before the declaration.
+
+---
+
+### ✅ Summary Table:
+
+| Keyword | Hoisted? | Can use before line? | Output if used early |
+| ------- | -------- | -------------------- | -------------------- |
+| `var`   | ✅ Yes    | ✅ Yes                | `undefined`          |
+| `let`   | ✅ Yes    | ❌ No (TDZ)           | ❌ ReferenceError     |
+| `const` | ✅ Yes    | ❌ No (TDZ)           | ❌ ReferenceError     |
+
+---
+
+## ✅ Interview Tip:
+
+> 🔹 **Q: What is hoisting in JavaScript?**
+> **A:** Hoisting is JavaScript's default behavior of moving declarations (not initializations) to the top of the current scope.
+> `var` is hoisted and initialized as `undefined`.
+> `let` and `const` are hoisted but not initialized (stay in Temporal Dead Zone).
+
+---
+

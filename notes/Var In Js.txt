@@ -1,0 +1,63 @@
+## 🟢 **Step 2: Variables in JavaScript**
+
+### 🔹 What is a variable?
+
+A **variable** is like a **container** that stores data (like a name, number, etc.) which we can use later.
+
+Think of it like this:
+
+📦 *You label a box as "name" and put "Anchal" inside it.*
+
+---
+
+## 🔸 How to create a variable in JavaScript?
+
+There are **3 ways**:
+
+```javascript
+var name = "Anchal";   // old way (avoid in modern JS)
+let age = 21;          // recommended
+const country = "India"; // constant value, cannot change
+```
+
+> For interviews:
+> ✅ Always prefer `let` and `const`.
+> ❌ Avoid `var` (because of hoisting issues and scope confusion).
+
+---
+
+### 🔹 Example:
+
+```javascript
+let firstName = "Anchal";
+let age = 21;
+const gender = "Female";
+
+console.log(firstName); // Output: Anchal
+console.log(age);       // Output: 21
+console.log(gender);    // Output: Female
+```
+
+---
+
+## 🔍 Deep Explanation:
+
+| Keyword | Can reassign value? | Can redeclare? | Scope         |
+| ------- | ------------------- | -------------- | ------------- |
+| `var`   | ✅ Yes               | ✅ Yes          | Function-wide |
+| `let`   | ✅ Yes               | ❌ No           | Block-level   |
+| `const` | ❌ No (constant)     | ❌ No           | Block-level   |
+
+---
+
+### ✅ Interview Tip:
+
+> 🔹 **Q: What is the difference between `let` and `const`?**
+> **A:**
+>
+> * Use `let` when the value might change.
+> * Use `const` when the value should **not change**.
+> * Both are **block-scoped** (limited to `{ }` block).
+
+---
+

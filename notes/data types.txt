@@ -1,0 +1,70 @@
+## 🟢 **Step 3: Data Types in JavaScript**
+
+### 📌 Why is this important?
+
+Knowing **data types** helps you:
+
+* Use the right kind of values (like numbers, text, true/false)
+* Avoid errors
+* Answer **interview questions** like "What is dynamic typing?"
+
+---
+
+## 🔹 JavaScript Data Types
+
+There are **two main categories**:
+
+### 🟠 1. **Primitive Data Types** (Basic values):
+
+| Data Type   | Example         | Description                        |
+| ----------- | --------------- | ---------------------------------- |
+| `String`    | `"hello"`       | Text inside quotes                 |
+| `Number`    | `42`, `3.14`    | Integers or decimals               |
+| `Boolean`   | `true`, `false` | Yes/No type answers                |
+| `Undefined` | `let x;`        | Variable declared but not assigned |
+| `Null`      | `let x = null;` | Intentionally empty                |
+| `Symbol`    | `Symbol("id")`  | Unique identifier (rarely used)    |
+| `BigInt`    | `123n`          | For very large numbers             |
+
+---
+
+### 🟢 2. **Non-Primitive (Reference) Data Types**:
+
+| Data Type  | Example                       | Description              |
+| ---------- | ----------------------------- | ------------------------ |
+| `Object`   | `{ name: "Anchal", age: 21 }` | Group of key-value pairs |
+| `Array`    | `[1, 2, 3]`                   | Ordered list of items    |
+| `Function` | `function() {}`               | A reusable block of code |
+
+---
+
+## 🔍 Examples:
+
+```javascript
+let name = "Anchal";          // String
+let age = 21;                 // Number
+let isStudent = true;         // Boolean
+let city;                     // Undefined
+let value = null;             // Null
+let big = 123456789123456789n; // BigInt
+let person = { name: "Anchal", age: 21 }; // Object
+let fruits = ["apple", "banana"];         // Array
+let greet = function() { console.log("Hi"); }; // Function
+```
+
+---
+
+## ✅ Interview Insight:
+
+> 🔹 **Q: Is JavaScript statically typed or dynamically typed?**
+> **A:** JavaScript is **dynamically typed**, which means the type of variable is decided **at runtime** and you can change it:
+
+```javascript
+let x = "hello";  // x is a string
+x = 123;          // now x is a number
+```
+
+> ✅ You don’t need to define the type. JavaScript figures it out while running.
+
+---
+

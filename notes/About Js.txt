@@ -1,0 +1,75 @@
+## 🔰 Step 1: What is JavaScript?
+
+### 🔹 Definition:
+
+**JavaScript** is a **programming language** used to make **webpages interactive**.
+
+While **HTML** gives structure and **CSS** gives style, **JavaScript** brings **life** to a webpage.
+
+Examples:
+* Clicking a button to show a message
+* Calculating results on a form
+* Creating animations, sliders, games
+* Validating login forms
+
+---
+
+## 🔹 Where is JavaScript used?
+
+JavaScript runs:
+
+* Inside your **web browser**
+* On the **frontend** (browser) and **backend** (like Node.js)
+* In **web apps**, **mobile apps**, even **desktop apps** (like VS Code)
+
+---
+
+## 🔹 Your First JS Code
+
+Let’s write your very first code step-by-step:
+
+### 🧾 HTML + JavaScript:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My First JavaScript</title>
+</head>
+<body>
+  <h1>Welcome to JavaScript</h1>
+
+  <script>
+    console.log("Hello, JavaScript!");
+  </script>
+</body>
+</html>
+```
+
+### 🔎 Explanation:
+
+* `<!DOCTYPE html>` → Declares this is an HTML5 document.
+* `<h1>` → Displays a heading on the page.
+* `<script>` → Everything inside this runs as JavaScript.
+* `console.log("...")` → Outputs a message in the browser console (used for testing/debugging).
+
+---
+
+## 🔸 Interview Insight:
+
+> ✅ **Q: What is console.log used for?**
+> **A:** `console.log` is used to print messages to the browser’s developer console, often for testing or debugging JavaScript code.
+
+---
+
+## 🔍 Your Task:
+
+1. Open **Notepad** or any code editor (like VS Code).
+2. Paste the above code and save it as `index.html`.
+3. Open it in your browser (Chrome or Edge).
+4. Press **F12** → Go to the **Console tab**.
+5. You should see:
+
+   ```
+   Hello, JavaScript!
+   ```
