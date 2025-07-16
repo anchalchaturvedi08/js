@@ -1,0 +1,113 @@
+### 🔹 What are Operators?
+
+**Operators** are symbols used to perform actions on values or variables.
+
+Example:
+
+```javascript
+let sum = 10 + 5; // '+' is an operator
+```
+
+---
+
+## 🧱 Categories of Operators:
+
+### 1️⃣ **Arithmetic Operators** (Used for Math)
+
+| Operator | Description         | Example  | Result  |
+| -------- | ------------------- | -------- | ------- |
+| `+`      | Addition            | `10 + 5` | `15`    |
+| `-`      | Subtraction         | `10 - 5` | `5`     |
+| `*`      | Multiplication      | `10 * 2` | `20`    |
+| `/`      | Division            | `10 / 2` | `5`     |
+| `%`      | Modulus (remainder) | `10 % 3` | `1`     |
+| `**`     | Exponentiation      | `2 ** 3` | `8`     |
+| `++`     | Increment           | `x++`    | adds 1  |
+| `--`     | Decrement           | `x--`    | minus 1 |
+
+---
+
+### 2️⃣ **Assignment Operators** (To assign values)
+
+| Operator | Meaning             | Example                |
+| -------- | ------------------- | ---------------------- |
+| `=`      | Assign value        | `x = 10`               |
+| `+=`     | Add and assign      | `x += 5` → `x = x + 5` |
+| `-=`     | Subtract and assign | `x -= 3`               |
+| `*=`     | Multiply and assign | `x *= 2`               |
+| `/=`     | Divide and assign   | `x /= 2`               |
+
+---
+
+### 3️⃣ **Comparison Operators** (Used in conditions)
+
+| Operator | Meaning                         | Example     | Result  |
+| -------- | ------------------------------- | ----------- | ------- |
+| `==`     | Equal (value only)              | `5 == "5"`  | `true`  |
+| `===`    | Strict equal (value + type)     | `5 === "5"` | `false` |
+| `!=`     | Not equal (value)               | `5 != 4`    | `true`  |
+| `!==`    | Strict not equal (value + type) | `5 !== "5"` | `true`  |
+| `>`      | Greater than                    | `6 > 5`     | `true`  |
+| `<`      | Less than                       | `4 < 3`     | `false` |
+| `>=`     | Greater or equal                | `5 >= 5`    | `true`  |
+| `<=`     | Less or equal                   | `3 <= 4`    | `true`  |
+
+---
+
+### ✅ Interview Tip:
+
+> 🔹 **Q: What is the difference between `==` and `===`?**
+> **A:**
+
+> * `==` compares **values only** (does type conversion).
+> * `===` compares **values and types both** (strict check).
+
+Example:
+
+```javascript
+5 == "5"   // true
+5 === "5"  // false
+```
+
+---
+
+### 🔹 4️⃣ **Logical Operators in JavaScript**
+
+| Operator | Name | Description                                                            | Example         | Result                                                 |         |   |        |        |
+| -------- | ---- | ---------------------------------------------------------------------- | --------------- | ------------------------------------------------------ | ------- | - | ------ | ------ |
+| `&&`     | AND  | Returns `true` **only if both** conditions are `true`                  | `true && false` | `false`                                                |         |   |        |        |
+| `||`     | OR   | Returns true if at least one condition is true, otherwise returns false|                 | 
+| `!`      | NOT  | Returns the **opposite** value: `true` becomes `false`, and vice versa | `!true`         | `false`                                                |         |   |        |        |
+
+---
+
+### ✅ Short Recap with Examples:
+
+```javascript
+true  && true   // true
+true  && false  // false
+false || true   // true
+false || false  // false
+!true           // false
+!false          // true
+```
+
+---
+
+### 🧠 Practice Task:
+
+```javascript
+let a = 10;
+let b = 5;
+
+console.log(a + b);    // Add
+console.log(a % b);    // Remainder
+console.log(a > b);    // Compare
+console.log(a === "10"); // Strict equal (check type too)
+console.log(a !== 10);  // Not equal
+```
+
+You try changing values and observe output.
+
+---
+
